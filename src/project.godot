@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="project-redridinghood"
+config/name="Red Riding Hood"
 run/main_scene="uid://cab4vw5w13i1v"
 config/use_custom_user_dir=true
 config/custom_user_dir_name="RedRidingHood"

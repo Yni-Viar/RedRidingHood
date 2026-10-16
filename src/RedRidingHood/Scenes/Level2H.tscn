@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://b662txdydvt8a" path="res://RedRidingHood/Scripts/Level2c.gd" id="1_t2kju"]
 [ext_resource type="PackedScene" uid="uid://nfog8h78pcfx" path="res://RedRidingHood/PlayerController/Player.tscn" id="2_jo1c0"]
 [ext_resource type="Texture2D" uid="uid://b0o0ldij23oq7" path="res://RedRidingHood/Assets/backgrounds/granny_house.svg" id="2_omx6o"]
-[ext_resource type="Theme" uid="uid://dc6c1peo4pfyr" path="res://addons/dialogue_nodes/themes/bubbly.theme" id="3_t2kju"]
+[ext_resource type="Theme" uid="uid://b4f152moh4ayu" path="res://addons/dialogue_nodes/themes/bubblyClean.theme" id="4_a8ujb"]
 [ext_resource type="Script" uid="uid://d2p44uvd2dsa1" path="res://addons/dialogue_nodes/objects/DialogueBox.gd" id="4_omx6o"]
 [ext_resource type="Script" uid="uid://b433w3r1hhutv" path="res://addons/dialogue_nodes/objects/bbcodeWait.gd" id="5_k8ubw"]
 [ext_resource type="Resource" uid="uid://c3bqei8f4py0o" path="res://RedRidingHood/Dialogues/dialogue.tres" id="6_k8ubw"]
@@ -146,7 +146,7 @@ offset_top = -586.0
 offset_bottom = -445.0
 grow_horizontal = 2
 grow_vertical = 0
-theme = ExtResource("3_t2kju")
+theme = ExtResource("4_a8ujb")
 script = ExtResource("4_omx6o")
 data = ExtResource("6_k8ubw")
 custom_effects = Array[RichTextEffect]([SubResource("RichTextEffect_71axn"), SubResource("RichTextEffect_dahhg"), SubResource("RichTextEffect_3so38")])

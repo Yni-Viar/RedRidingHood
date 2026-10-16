@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://b662txdydvt8a" path="res://RedRidingHood/Scripts/Level2c.gd" id="1_mn3aa"]
 [ext_resource type="PackedScene" uid="uid://nfog8h78pcfx" path="res://RedRidingHood/PlayerController/Player.tscn" id="2_o62dc"]
-[ext_resource type="Theme" uid="uid://dc6c1peo4pfyr" path="res://addons/dialogue_nodes/themes/bubbly.theme" id="3_mn3aa"]
+[ext_resource type="Theme" uid="uid://b4f152moh4ayu" path="res://addons/dialogue_nodes/themes/bubblyClean.theme" id="4_q78pk"]
 [ext_resource type="Script" uid="uid://d2p44uvd2dsa1" path="res://addons/dialogue_nodes/objects/DialogueBox.gd" id="4_x3p2s"]
 [ext_resource type="Script" uid="uid://b433w3r1hhutv" path="res://addons/dialogue_nodes/objects/bbcodeWait.gd" id="5_yy72m"]
 [ext_resource type="Script" uid="uid://dvil74f7w4m8p" path="res://addons/dialogue_nodes/objects/bbcodeGhost.gd" id="6_s7okx"]
@@ -136,6 +136,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="DialogueBox" type="Panel" parent="CanvasLayer/Control" unique_id=450406176]
+visible = false
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -145,7 +146,7 @@ offset_top = -586.0
 offset_bottom = -445.0
 grow_horizontal = 2
 grow_vertical = 0
-theme = ExtResource("3_mn3aa")
+theme = ExtResource("4_q78pk")
 script = ExtResource("4_x3p2s")
 data = ExtResource("6_x3p2s")
 custom_effects = Array[RichTextEffect]([SubResource("RichTextEffect_71axn"), SubResource("RichTextEffect_dahhg"), SubResource("RichTextEffect_3so38")])

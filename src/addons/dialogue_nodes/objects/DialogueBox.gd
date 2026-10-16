@@ -191,11 +191,11 @@ func _enter_tree():
 	dialogue_label.bbcode_enabled = true
 	dialogue_label.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	dialogue_label.custom_effects = custom_effects
-	dialogue_label.add_theme_font_size_override("bold_italics_font_size", 16)
-	dialogue_label.add_theme_font_size_override("italics_font_size", 16)
-	dialogue_label.add_theme_font_size_override("mono_font_size", 16)
-	dialogue_label.add_theme_font_size_override("normal_font_size", 16)
-	dialogue_label.add_theme_font_size_override("bold_font_size", 16)
+	dialogue_label.add_theme_font_size_override("bold_italics_font_size", 18)
+	dialogue_label.add_theme_font_size_override("italics_font_size", 18)
+	dialogue_label.add_theme_font_size_override("mono_font_size", 18)
+	dialogue_label.add_theme_font_size_override("normal_font_size", 18)
+	dialogue_label.add_theme_font_size_override("bold_font_size", 18)
 	
 	options_container = BoxContainer.new()
 	_sub_container.add_child(options_container)
