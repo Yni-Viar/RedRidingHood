@@ -8,13 +8,15 @@ const JUMP_VELOCITY = -400.0
 @export var dlgs: Dictionary[String, bool] = {}
 
 @export var dlg_index: int = -1
+@export var face_right: bool = true
 var direction: float = 0.0
 
 func _ready() -> void:
-	direction = -0.1
-	await get_tree().physics_frame
-	await get_tree().physics_frame
-	direction = 0.0
+	if !face_right:
+		direction = -0.1
+		await get_tree().physics_frame
+		await get_tree().physics_frame
+		direction = 0.0
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.

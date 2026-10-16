@@ -58,7 +58,7 @@ nodes = {
 "text": "It should not matter you."
 }
 },
-"size": Vector2(300.00015, 339.99988),
+"size": Vector2(300, 340),
 "speaker": 1
 },
 &"1_10": {
@@ -71,7 +71,7 @@ nodes = {
 "text": "Why do you have big teeth."
 }
 },
-"size": Vector2(300.00012, 266),
+"size": Vector2(300.00037, 271.00024),
 "speaker": 3
 },
 &"1_11": {
@@ -84,7 +84,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.00024, 240),
+"size": Vector2(300.00024, 240.00024),
 "speaker": 3
 },
 &"1_12": {
@@ -97,11 +97,11 @@ nodes = {
 "text": "I brought some pies to you"
 }
 },
-"size": Vector2(300, 266),
+"size": Vector2(300, 270.99988),
 "speaker": 2
 },
 &"1_13": {
-"dialogue": "Good girl! I ask you to bring them to...",
+"dialogue": "I'm glad that you care about...",
 "offset": Vector2(120, 1200),
 "options": {
 0: {
@@ -110,11 +110,11 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.00018, 240),
+"size": Vector2(300.00043, 240),
 "speaker": 2
 },
 &"1_14": {
-"dialogue": "Go out, please, you are NOT allowed to come home!",
+"dialogue": "Get out of here, you filthy beast!",
 "offset": Vector2(-180, 1840),
 "options": {
 0: {
@@ -123,7 +123,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.0001, 240),
+"size": Vector2(300.00018, 240.00012),
 "speaker": 2
 },
 &"1_15": {
@@ -136,7 +136,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.00012, 240),
+"size": Vector2(300.00012, 240.00012),
 "speaker": 1
 },
 &"1_16": {
@@ -149,7 +149,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.00006, 240),
+"size": Vector2(300.0003, 240.00012),
 "speaker": ""
 },
 &"1_17": {
@@ -162,11 +162,11 @@ nodes = {
 "text": "I brought some pies to you"
 }
 },
-"size": Vector2(300, 266),
+"size": Vector2(300, 270.99988),
 "speaker": 2
 },
 &"1_18": {
-"dialogue": "Good girl! I ask you to bring them to me, and we'll have a good time together!",
+"dialogue": "I'm glad that you care about me. We'll have a good time together!",
 "offset": Vector2(120, 1480),
 "options": {
 0: {
@@ -175,7 +175,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.00018, 240),
+"size": Vector2(300.00043, 240.00024),
 "speaker": 2
 },
 &"1_2": {
@@ -193,12 +193,12 @@ nodes = {
 "text": "Yes, please."
 }
 },
-"size": Vector2(300.00015, 304),
+"size": Vector2(300, 304),
 "speaker": 1
 },
 &"1_3": {
 "dialogue": "And... where are you going?
-I can carry your basket very fast!",
+I can carry your basket very quickly!",
 "offset": Vector2(700, -140),
 "options": {
 0: {
@@ -207,7 +207,7 @@ I can carry your basket very fast!",
 "text": "To the grandmother's house."
 }
 },
-"size": Vector2(319.99988, 319.99988),
+"size": Vector2(319.9994, 320),
 "speaker": 1
 },
 &"1_4": {
@@ -230,11 +230,11 @@ I can carry your basket very fast!",
 "text": "I want to carry the basket by own. Granny would be upset."
 }
 },
-"size": Vector2(319.99878, 359.99976),
+"size": Vector2(319.99805, 359.99976),
 "speaker": 1
 },
 &"1_5": {
-"dialogue": "Yes, I can entertain your grandmother.",
+"dialogue": "I can entertain your grandmother!",
 "offset": Vector2(1860, 600),
 "options": {
 0: {
@@ -248,7 +248,7 @@ I can carry your basket very fast!",
 "text": "Okay."
 }
 },
-"size": Vector2(300.00098, 304.00024),
+"size": Vector2(300, 304.00037),
 "speaker": 1
 },
 &"1_6": {
@@ -266,7 +266,7 @@ I can carry your basket very fast!",
 "text": "Maybe... you could halp me a bit."
 }
 },
-"size": Vector2(300.00006, 304),
+"size": Vector2(300, 304),
 "speaker": 1
 },
 &"1_7": {
@@ -279,7 +279,7 @@ I can carry your basket very fast!",
 "text": ""
 }
 },
-"size": Vector2(300.0001, 240),
+"size": Vector2(300, 240),
 "speaker": 0
 },
 &"1_8": {
@@ -292,7 +292,7 @@ I can carry your basket very fast!",
 "text": "I brought some pies to you"
 }
 },
-"size": Vector2(300.0001, 266),
+"size": Vector2(300, 271.00024),
 "speaker": 3
 },
 &"1_9": {
@@ -305,7 +305,7 @@ I can carry your basket very fast!",
 "text": "Why do you have big ears?"
 }
 },
-"size": Vector2(300.00018, 266),
+"size": Vector2(300.00043, 271.00024),
 "speaker": 3
 },
 &"2_1": {
