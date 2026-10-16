@@ -36,7 +36,7 @@ func _physics_process(delta: float) -> void:
 
 
 func _on_talk_trigger_body_entered(body: Node2D) -> void:
-	if body is PlayerScript:
+	if body is RRHPlayerScript:
 		if dlg_index >= 0 && dlg_index < dlgs.size():
 			get_tree().root.get_node("Game/CanvasLayer/Control/DialogueBox").start(dlgs.keys()[dlg_index])
 			get_tree().root.get_node("Game/CanvasLayer/Control/DialogueBox").show()

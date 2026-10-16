@@ -53,6 +53,6 @@ func _on_dialogue_box_dialogue_signal(value: String) -> void:
 
 
 func _on_no_way_back_body_entered(body: Node2D) -> void:
-	if body is PlayerScript:
+	if body is RRHPlayerScript:
 		get_tree().root.get_node("Game/CanvasLayer/Control/DialogueBox").start("dlg_nwb")
 		get_tree().root.get_node("Game/CanvasLayer/Control/DialogueBox").show()

@@ -71,7 +71,7 @@ nodes = {
 "text": "Why do you have big teeth."
 }
 },
-"size": Vector2(300.0001, 240),
+"size": Vector2(300.00012, 266),
 "speaker": 3
 },
 &"1_11": {
@@ -97,7 +97,7 @@ nodes = {
 "text": "I brought some pies to you"
 }
 },
-"size": Vector2(300, 240),
+"size": Vector2(300, 266),
 "speaker": 2
 },
 &"1_13": {
@@ -162,7 +162,7 @@ nodes = {
 "text": "I brought some pies to you"
 }
 },
-"size": Vector2(300, 240),
+"size": Vector2(300, 266),
 "speaker": 2
 },
 &"1_18": {
@@ -248,7 +248,7 @@ I can carry your basket very fast!",
 "text": "Okay."
 }
 },
-"size": Vector2(300.00085, 304.00024),
+"size": Vector2(300.00098, 304.00024),
 "speaker": 1
 },
 &"1_6": {
@@ -292,7 +292,7 @@ I can carry your basket very fast!",
 "text": "I brought some pies to you"
 }
 },
-"size": Vector2(300.0001, 240),
+"size": Vector2(300.0001, 266),
 "speaker": 3
 },
 &"1_9": {
@@ -305,7 +305,7 @@ I can carry your basket very fast!",
 "text": "Why do you have big ears?"
 }
 },
-"size": Vector2(300.00018, 240),
+"size": Vector2(300.00018, 266),
 "speaker": 3
 },
 &"2_1": {
@@ -355,4 +355,4 @@ I can carry your basket very fast!",
 }
 }
 strays = Array[String](["2_1", "2_2"])
-characters = "res://Dialogues/characters.tres"
+characters = "res://RedRidingHood/Dialogues/characters.tres"

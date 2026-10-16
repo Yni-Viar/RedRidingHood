@@ -1,33 +1,13 @@
 [gd_resource type="Resource" script_class="CharacterList" format=3 uid="uid://ctbwvsnn0sweu"]
 
 [ext_resource type="Script" uid="uid://urh5p4atyoyi" path="res://addons/dialogue_nodes/objects/Character.gd" id="1_2xlur"]
+[ext_resource type="Resource" uid="uid://dv0m75f6cfaeq" path="res://RedRidingHood/Dialogues/Characters/red.tres" id="2_byy4s"]
 [ext_resource type="Script" uid="uid://bqqa8okdheslq" path="res://addons/dialogue_nodes/objects/CharacterList.gd" id="2_sjq1t"]
-
-[sub_resource type="Resource" id="Resource_bdlbp"]
-script = ExtResource("1_2xlur")
-name = "Red Riding Hood"
-color = Color(0.9074366, 0.85234684, 0.82884514, 1)
-metadata/_custom_type_script = "uid://urh5p4atyoyi"
-
-[sub_resource type="Resource" id="Resource_2h8qs"]
-script = ExtResource("1_2xlur")
-name = "Wolf"
-color = Color(0.7047794, 0.5709828, 0.5319184, 1)
-metadata/_custom_type_script = "uid://urh5p4atyoyi"
-
-[sub_resource type="Resource" id="Resource_s7okx"]
-script = ExtResource("1_2xlur")
-name = "Granny"
-color = Color(0.70796657, 0.7079665, 0.7079665, 1)
-metadata/_custom_type_script = "uid://urh5p4atyoyi"
-
-[sub_resource type="Resource" id="Resource_h3r1y"]
-script = ExtResource("1_2xlur")
-name = "Granny"
-color = Color(0.7047794, 0.5709828, 0.5319184, 1)
-metadata/_custom_type_script = "uid://urh5p4atyoyi"
+[ext_resource type="Resource" uid="uid://cplv8qvkv5mbj" path="res://RedRidingHood/Dialogues/Characters/wolf.tres" id="3_15ins"]
+[ext_resource type="Resource" uid="uid://bxpdojsioto8" path="res://RedRidingHood/Dialogues/Characters/granny.tres" id="4_8qucu"]
+[ext_resource type="Resource" uid="uid://c2aq2d80bpgr0" path="res://RedRidingHood/Dialogues/Characters/granny_wolf.tres" id="5_80ei6"]
 
 [resource]
 script = ExtResource("2_sjq1t")
-characters = Array[ExtResource("1_2xlur")]([SubResource("Resource_bdlbp"), SubResource("Resource_2h8qs"), SubResource("Resource_s7okx"), SubResource("Resource_h3r1y")])
+characters = Array[ExtResource("1_2xlur")]([ExtResource("2_byy4s"), ExtResource("3_15ins"), ExtResource("4_8qucu"), ExtResource("5_80ei6")])
 metadata/_custom_type_script = "uid://bqqa8okdheslq"
