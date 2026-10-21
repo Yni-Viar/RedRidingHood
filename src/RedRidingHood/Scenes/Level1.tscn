@@ -154,18 +154,33 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
+
+[node name="LeftBar" type="TextureButton" parent="CanvasLayer/Control" unique_id=1383961613]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_vertical = 0
+toggle_mode = true
+
+[node name="RightBar" type="TextureButton" parent="CanvasLayer/Control" unique_id=1784843819]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 0
+toggle_mode = true
 
 [node name="DialogueBox" type="Panel" parent="CanvasLayer/Control" unique_id=450406176]
 visible = false
 layout_mode = 1
-anchors_preset = 12
-anchor_top = 1.0
+anchors_preset = 10
 anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = -151.0
-offset_bottom = -10.0
+offset_bottom = 141.0
 grow_horizontal = 2
-grow_vertical = 0
 theme = ExtResource("4_mtow7")
 script = ExtResource("3_7lihs")
 data = ExtResource("6_2h8qs")
@@ -210,6 +225,8 @@ position = Vector2(-672, 1)
 position = Vector2(8, 184.5)
 shape = SubResource("RectangleShape2D_ntbkr")
 
+[connection signal="toggled" from="CanvasLayer/Control/LeftBar" to="." method="_on_left_bar_toggled"]
+[connection signal="toggled" from="CanvasLayer/Control/RightBar" to="." method="_on_right_bar_toggled"]
 [connection signal="dialogue_ended" from="CanvasLayer/Control/DialogueBox" to="Player" method="_on_dialogue_box_dialogue_ended"]
 [connection signal="dialogue_signal" from="CanvasLayer/Control/DialogueBox" to="." method="_on_dialogue_box_dialogue_signal"]
 [connection signal="body_entered" from="NoWayBack" to="." method="_on_no_way_back_body_entered"]

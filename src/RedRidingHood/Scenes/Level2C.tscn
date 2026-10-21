@@ -11,11 +11,11 @@
 [ext_resource type="Texture2D" uid="uid://b0o0ldij23oq7" path="res://RedRidingHood/Assets/backgrounds/granny_house.svg" id="9_o62dc"]
 [ext_resource type="Texture2D" uid="uid://bransak0g0tus" path="res://RedRidingHood/Assets/granny_wolf.svg" id="10_yy72m"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mn3aa"]
-size = Vector2(130, 598)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5r3h7"]
+size = Vector2(65, 603)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_o62dc"]
-size = Vector2(1295.25, 74)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tsnsq"]
+size = Vector2(1316.2031, 74)
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ntbkr"]
 normal = Vector2(1, 0)
@@ -83,28 +83,29 @@ _data = {
 script = ExtResource("1_mn3aa")
 game_route = 1
 
-[node name="GrannyHouse" type="Sprite2D" parent="." unique_id=406929550]
+[node name="GrannyHouse" type="Sprite2D" parent="." unique_id=1253203796]
+scale = Vector2(1.125, 1.08)
 texture = ExtResource("9_o62dc")
 centered = false
 
-[node name="WorldCollider" type="StaticBody2D" parent="." unique_id=568361888]
+[node name="WorldCollider" type="StaticBody2D" parent="." unique_id=455043130]
 position = Vector2(4, 38)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldCollider" unique_id=215630683]
-position = Vector2(-71, 262)
-shape = SubResource("RectangleShape2D_mn3aa")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldCollider" unique_id=1576426247]
+position = Vector2(-36, 258)
+shape = SubResource("RectangleShape2D_5r3h7")
 
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="WorldCollider" unique_id=1597981750]
-position = Vector2(1088, 260)
-shape = SubResource("RectangleShape2D_mn3aa")
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="WorldCollider" unique_id=2093364704]
+position = Vector2(1179.5, 260.5)
+shape = SubResource("RectangleShape2D_5r3h7")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="WorldCollider" unique_id=644999888]
-position = Vector2(510.625, -80)
-shape = SubResource("RectangleShape2D_o62dc")
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="WorldCollider" unique_id=194275696]
+position = Vector2(560.2031, -78)
+shape = SubResource("RectangleShape2D_tsnsq")
 
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="WorldCollider" unique_id=561824972]
-position = Vector2(508.75, 600)
-shape = SubResource("RectangleShape2D_o62dc")
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="WorldCollider" unique_id=697867256]
+position = Vector2(556, 602)
+shape = SubResource("RectangleShape2D_tsnsq")
 
 [node name="Player" parent="." unique_id=693911775 instance=ExtResource("2_o62dc")]
 position = Vector2(144, 488)
@@ -128,24 +129,36 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -2.0
-offset_top = -14.0
-offset_right = -2.0
-offset_bottom = -14.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
+
+[node name="LeftBar" type="TextureButton" parent="CanvasLayer/Control" unique_id=1844117287]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_vertical = 0
+toggle_mode = true
+
+[node name="RightBar" type="TextureButton" parent="CanvasLayer/Control" unique_id=682371025]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 0
+toggle_mode = true
 
 [node name="DialogueBox" type="Panel" parent="CanvasLayer/Control" unique_id=450406176]
 visible = false
 layout_mode = 1
-anchors_preset = 12
-anchor_top = 1.0
+anchors_preset = -1
 anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = -586.0
-offset_bottom = -445.0
+offset_bottom = 141.0
 grow_horizontal = 2
-grow_vertical = 0
+grow_vertical = 2
 theme = ExtResource("4_q78pk")
 script = ExtResource("4_x3p2s")
 data = ExtResource("6_x3p2s")
@@ -158,8 +171,6 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 2.0
-offset_top = 14.0
 offset_right = 2.0
 offset_bottom = 14.0
 grow_horizontal = 2
@@ -189,11 +200,13 @@ vertical_alignment = 1
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/Control" unique_id=2130543937]
 libraries/ = SubResource("AnimationLibrary_yy72m")
 
-[node name="GrannyWolf" type="Sprite2D" parent="." unique_id=1180475739]
-position = Vector2(581, 394.5)
+[node name="GrannyWolf" type="Sprite2D" parent="." unique_id=1222569039]
+position = Vector2(648, 416)
 scale = Vector2(1, 0.68604654)
 texture = ExtResource("10_yy72m")
 
+[connection signal="toggled" from="CanvasLayer/Control/LeftBar" to="." method="_on_left_bar_toggled"]
+[connection signal="toggled" from="CanvasLayer/Control/RightBar" to="." method="_on_right_bar_toggled"]
 [connection signal="dialogue_ended" from="CanvasLayer/Control/DialogueBox" to="Player" method="_on_dialogue_box_dialogue_ended"]
 [connection signal="dialogue_signal" from="CanvasLayer/Control/DialogueBox" to="." method="_on_dialogue_box_dialogue_signal"]
 

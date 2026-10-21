@@ -26,7 +26,7 @@ func _physics_process(delta: float) -> void:
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
-	if !cutscene:
+	if !cutscene && is_zero_approx(direction):
 		direction = Input.get_axis("ui_left", "ui_right")
 	if direction && !talking:
 		velocity.x = direction * SPEED

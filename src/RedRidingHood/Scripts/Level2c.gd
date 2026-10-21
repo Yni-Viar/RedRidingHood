@@ -42,3 +42,12 @@ func _on_dialogue_box_dialogue_signal(value: String) -> void:
 
 func load_last_scene_outsmart() -> void:
 	Settings.change_scene("res://RedRidingHood/Scenes/Level3O.tscn")
+
+func _on_left_bar_toggled(toggled_on: bool) -> void:
+	if toggled_on && !$CanvasLayer/Control/RightBar.button_pressed:
+		$Player.direction = -1.0
+
+
+func _on_right_bar_toggled(toggled_on: bool) -> void:
+	if toggled_on && !$CanvasLayer/Control/LeftBar.button_pressed:
+		$Player.direction = 1.0

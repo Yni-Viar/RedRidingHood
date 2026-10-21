@@ -56,3 +56,26 @@ func _on_no_way_back_body_entered(body: Node2D) -> void:
 	if body is RRHPlayerScript:
 		get_tree().root.get_node("Game/CanvasLayer/Control/DialogueBox").start("dlg_nwb")
 		get_tree().root.get_node("Game/CanvasLayer/Control/DialogueBox").show()
+
+
+func _on_h_slider_changed() -> void:
+	$Player.direction = $CanvasLayer/Control/HSlider.value
+
+
+func _on_right_bar_gui_input(event: InputEvent) -> void:
+	if event is InputEventMouseButton:
+		$Player.direction = -1.0
+
+
+func _on_left_bar_toggled(toggled_on: bool) -> void:
+	if toggled_on && $Player.direction <= 0.0001:
+		$Player.direction = -1.0
+	else:
+		$Player.direction = 0.0
+
+
+func _on_right_bar_toggled(toggled_on: bool) -> void:
+	if toggled_on && $Player.direction >= -0.0001:
+		$Player.direction = 1.0
+	else:
+		$Player.direction = 0.0
